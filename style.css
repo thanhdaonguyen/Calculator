@@ -1,0 +1,78 @@
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#theCalculator {
+    width: 350px;
+    height: 500px;
+    background-color: aqua;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 2%;
+}
+
+
+/* the header */
+#header{
+    flex-grow: 1;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* the screen */
+#screen{
+    flex-grow: 1.5;
+    background-color:aquamarine;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#result {
+    background-color: azure;
+    height: 70%;
+    min-width: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+}
+
+/* the keyboard */
+#keyboard{
+    flex-grow: 6;
+    background-color: greenyellow;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2px;
+}
+
+.key {
+    background-color: azure;
+    box-sizing: border-box;
+    border: black solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8%;
+}
+
+.key:hover {
+    background-color: bisque;
+}
+
+#k0 {
+    grid-column: 1/3;
+}
